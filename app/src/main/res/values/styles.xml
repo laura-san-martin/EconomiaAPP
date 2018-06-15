@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/verde2</item>
+        <item name="colorPrimaryDark">@color/verde1</item>
+        <item name="colorAccent">@color/verde3</item>
+
+        <item name="android:navigationBarColor">@color/verde2</item>
+        <item name="android:textColor">@color/cinza3</item>
+
+        <item name="android:navigationBarDividerColor">@color/verde1</item>
+        <item name="android:colorForeground">@color/verde1</item>
+        <item name="android:colorBackground">@color/cinza1</item>
+        <item name="android:statusBarColor">@color/verde1</item>
+        <item name="android:fontFamily">@font/quicksand_book_font</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

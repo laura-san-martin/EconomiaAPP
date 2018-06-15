@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde2"
+    tools:context=".LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="252dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cinza1"
+            android:ems="10"
+            android:fontFamily="@font/quicksand_book_font"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/cinza3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/quicksand_book_font"
+            android:text="Economia"
+            android:textAllCaps="true"
+            android:textColor="@color/verde3"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="126dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/verde1"
+            android:fontFamily="@font/quicksand_book_font"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:onClick="Logar"
+            android:textColor="@color/verde3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/senha"
+            app:layout_constraintVertical_bias="0.114" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="125dp"
+            android:layout_height="134dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_btn"
+            app:srcCompat="@drawable/ic_economia_logo" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cinza1"
+            android:ems="10"
+            android:fontFamily="@font/quicksand_book_font"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textColor="@color/cinza3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/senha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginEnd="146dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginRight="146dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/quicksand_book_font"
+            android:text="Login"
+            android:textColor="@color/verde3"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="83dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/quicksand_book_font"
+            android:text="Criar nova conta"
+            android:textAllCaps="false"
+            android:textColor="@color/verde3"
+            android:textSize="24sp"
+            android:onClick="MostrarNovoUsuario"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/pop_up_novo_usuario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/verde2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cinza1"
+            tools:context=".AparelhoView">
+
+            <!-- TODO: Update blank fragment layout -->
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="426dp"
+                android:layout_height="82dp"
+                android:background="@color/verde2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="76dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/quicksand_book_font"
+                android:text="Usuário"
+                android:textAllCaps="true"
+                android:textColor="@color/verde3"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="313dp"
+                android:layout_marginBottom="64dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_economia_logo_cinza" />
+
+            <ImageButton
+                android:id="@+id/fechar_novo_user_btn"
+                android:layout_width="61dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_arow_left"
+                android:scaleX=".3"
+                android:scaleY=".7"
+                android:onClick="FecharNovoUsuario"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/novo_user_btn"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:background="@color/verde1"
+                android:onClick="AdicionarUsuario"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/quicksand_book_font"
+                android:text="Adicionar"
+                android:textColor="@color/verde3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_user_add_icon"
+                tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="384dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/novo_user_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_book_font"
+                    android:text="Nome:"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/userNome"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_bottom"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/cinza3"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_book_font"
+                    android:text="CPF:"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/userDoc"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/border_bottom"
+                    android:inputType="none"
+                    android:maxLength="11"
+                    android:textColor="@color/cinza3"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.507"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_book_font"
+                    android:text="Email:"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/userEmail"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_bottom"
+                    android:textColor="@color/cinza3"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.507"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_book_font"
+                    android:text="Senha:"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/userSenha"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_bottom"
+                    android:textColor="@color/cinza3"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_book_font"
+                    android:text="Endereço:"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/userEnde"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_bottom"
+                    android:textColor="@color/cinza3"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_popup_single_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#84696969"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="331dp"
+            android:layout_height="226dp"
+            android:layout_marginBottom="194dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="184dp"
+            android:background="@color/cinza1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/popup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/verde1"
+                android:text="Ok!"
+                android:textAllCaps="false"
+                android:textColor="@color/verde3"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/popup_text"
+                android:layout_width="285dp"
+                android:layout_height="103dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/quicksand_book_font"
+                android:lineSpacingExtra="10dp"
+                android:text="Aparelho adicionado com sucesso!"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13999999" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

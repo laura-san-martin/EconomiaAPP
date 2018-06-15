@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="verde1">#a1d398</color>
+    <color name="verde2">#30a07b</color>
+    <color name="verde3">#296967</color>
+
+    <color name="cinza1">#cbcbcb</color>
+    <color name="cinza2">#bcbcbc</color>
+    <color name="cinza3">#696969</color>
+</resources>
